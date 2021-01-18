@@ -1,5 +1,5 @@
 # Welcome to `ndpretty`
-> This is little helper to display numpy ndarrays in a pretty table in Jupyter notebooks.
+> Your little helper to display numpy ndarrays in a pretty table in Jupyter notebooks.
 
 
 Jupyter notebooks are a great way to develop. `ndpretty` makes it even better for people who use numpy by providing nice formatting of `ndarray`s.
