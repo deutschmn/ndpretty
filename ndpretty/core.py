@@ -42,7 +42,7 @@ def ndarray_html(a):
 
 def _to_HTML(a, alphas, is_numeric, lowest_color, highest_color):
     html = '<div style="overflow: auto">'
-    html += '<table>'
+    html += '<table style="border-spacing: 0px;">'
     html += '<tr>'
     html += '<th></th>'
     for j in range(a.shape[1]):
@@ -60,7 +60,7 @@ def _to_HTML(a, alphas, is_numeric, lowest_color, highest_color):
                 value = number_format % a[i][j]
             else:
                 value = str(a[i][j])
-            html += '<td style="background-color: %s">%s</td>' % (hex_color, value)
+            html += '<td style="background-color: %s; padding:5px !important">%s</td>' % (hex_color, value)
         html += "</tr>"
     html += '</table>'
     html += '</div>'
