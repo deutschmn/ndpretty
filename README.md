@@ -12,13 +12,13 @@ Jupyter notebooks are a great way to develop. `ndpretty` makes it even better fo
 
 The default configuration is loaded as simply as this:
 
-```python
+```
 ndpretty.default()
 ```
 
 After this line has been exectued, all cell outputs that are `np.ndarray` or `torch.Tensor` are automatically formatted by ndpretty.
 
-```python
+```
 a = np.random.rand(20, 30, 2)
 a
 ```
@@ -37,7 +37,7 @@ a
 
 Normally, `ndarray`s look like this in a Jupyter notebook:
 
-```python
+```
 a = np.random.rand(20, 30, 2)
 print(a)
 ```
@@ -95,7 +95,7 @@ print(a)
 
 At least to me, that's quite hard to read. Using `ndpretty` they look like this:
 
-```python
+```
 np.random.rand(10, 20)
 ```
 
