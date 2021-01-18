@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: '`ndpretty` implementation'
+      title: Implementation
       url: ndpretty.html
     - output: web,pdf
       title: Alternatives
