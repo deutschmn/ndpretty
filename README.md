@@ -4,6 +4,8 @@
 
 Jupyter notebooks are a great way to develop. `ndpretty` makes it even better for people who use numpy by providing nice formatting of `ndarray`s.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deutschmn/ndpretty/blob/master/index.ipynb)
+
 ## Install
 
 `pip install ndpretty`
