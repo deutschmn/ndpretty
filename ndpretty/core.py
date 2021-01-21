@@ -26,19 +26,20 @@ def ndarray_html(a):
         if a.shape[0] == 0:
             print('[]')
             return
-        _html_array(a[:,np.newaxis])
-    elif len(a.shape) == 2:
-        _html_array(a)
-    elif len(a.shape) > 2:
-        d = len(a.shape)
-        slice_str = "[:, :, " + "0, " * (d - 3) + "0]"
-        slice_widget = widgets.Text(
-            value=slice_str,
-            placeholder="e.g. " + slice_str,
-            description='Slice:',
-            disabled=False
-        )
-        interact(_html_higher_d_array, a=fixed(a), slice_str=slice_widget)
+        a = a[:,np.newaxis]
+
+    d = len(a.shape)
+    assert d >= 2
+    sl = [":", ":"]
+    sl.extend(["0"] * (d - 2))
+    slice_str = "[" + ", ".join(sl) + "]"
+    slice_widget = widgets.Text(
+        value=slice_str,
+        placeholder="e.g. " + slice_str,
+        description='Slice:',
+        disabled=False
+    )
+    interact(_html_higher_d_array, a=fixed(a), slice_str=slice_widget)
 
 def _to_HTML(a, alphas, is_numeric, lowest_color, highest_color):
     html = '<div style="overflow: auto">'
