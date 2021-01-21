@@ -5,6 +5,7 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"lowest_color": "00_ndpretty.ipynb",
          "highest_color": "00_ndpretty.ipynb",
          "number_format": "00_ndpretty.ipynb",
+         "default_max_dim_size": "00_ndpretty.ipynb",
          "ndarray_html": "00_ndpretty.ipynb",
          "register_formatter": "00_ndpretty.ipynb",
          "ndarray_stats_print_formatter": "00_ndpretty.ipynb",
