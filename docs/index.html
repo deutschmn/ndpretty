@@ -42,13 +42,85 @@ nb_path: "index.ipynb"
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install ndpretty</code></p>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pip</span> install ndpretty
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Requirement already satisfied: ndpretty in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (0.0.3)
+Requirement already satisfied: IPython in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ndpretty) (7.14.0)
+Requirement already satisfied: ipywidgets in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ndpretty) (7.5.1)
+Requirement already satisfied: numpy in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ndpretty) (1.18.4)
+Requirement already satisfied: pygments in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (2.6.1)
+Requirement already satisfied: appnope in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (0.1.0)
+Requirement already satisfied: setuptools&gt;=18.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (41.2.0)
+Requirement already satisfied: pexpect in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (4.8.0)
+Requirement already satisfied: jedi&gt;=0.10 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (0.17.0)
+Requirement already satisfied: traitlets&gt;=4.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (4.3.3)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (3.0.5)
+Requirement already satisfied: backcall in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (0.1.0)
+Requirement already satisfied: decorator in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (4.4.2)
+Requirement already satisfied: pickleshare in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from IPython-&gt;ndpretty) (0.7.5)
+Requirement already satisfied: parso&gt;=0.7.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from jedi&gt;=0.10-&gt;IPython-&gt;ndpretty) (0.7.0)
+Requirement already satisfied: wcwidth in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;IPython-&gt;ndpretty) (0.1.9)
+Requirement already satisfied: six in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from traitlets&gt;=4.2-&gt;IPython-&gt;ndpretty) (1.15.0)
+Requirement already satisfied: ipython-genutils in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from traitlets&gt;=4.2-&gt;IPython-&gt;ndpretty) (0.2.0)
+Requirement already satisfied: nbformat&gt;=4.2.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ipywidgets-&gt;ndpretty) (5.0.6)
+Requirement already satisfied: ipykernel&gt;=4.5.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ipywidgets-&gt;ndpretty) (5.3.0)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ipywidgets-&gt;ndpretty) (3.5.1)
+Requirement already satisfied: tornado&gt;=4.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets-&gt;ndpretty) (6.0.4)
+Requirement already satisfied: jupyter-client in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets-&gt;ndpretty) (6.1.3)
+Requirement already satisfied: jupyter-core in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets-&gt;ndpretty) (4.6.3)
+Requirement already satisfied: jsonschema!=2.5.0,&gt;=2.4 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets-&gt;ndpretty) (3.2.0)
+Requirement already satisfied: pyrsistent&gt;=0.14.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets-&gt;ndpretty) (0.16.0)
+Requirement already satisfied: attrs&gt;=17.4.0 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets-&gt;ndpretty) (19.3.0)
+Requirement already satisfied: importlib-metadata in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets-&gt;ndpretty) (1.6.0)
+Requirement already satisfied: notebook&gt;=4.4.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (6.0.3)
+Requirement already satisfied: pyzmq&gt;=17 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (19.0.1)
+Requirement already satisfied: Send2Trash in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (1.5.0)
+Requirement already satisfied: prometheus-client in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.8.0)
+Requirement already satisfied: jinja2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (2.11.2)
+Requirement already satisfied: nbconvert in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (5.6.1)
+Requirement already satisfied: terminado&gt;=0.8.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.8.3)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /Users/patrick/Library/Python/3.7/lib/python/site-packages (from jupyter-client-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets-&gt;ndpretty) (2.8.1)
+Requirement already satisfied: ptyprocess in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from terminado&gt;=0.8.1-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.6.0)
+Requirement already satisfied: zipp&gt;=0.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from importlib-metadata-&gt;jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets-&gt;ndpretty) (3.1.0)
+Requirement already satisfied: MarkupSafe&gt;=0.23 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from jinja2-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (1.1.1)
+Requirement already satisfied: bleach in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (3.1.5)
+Requirement already satisfied: defusedxml in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.6.0)
+Requirement already satisfied: testpath in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.4.4)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (1.4.2)
+Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.8.4)
+Requirement already satisfied: entrypoints&gt;=0.2.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.3)
+Requirement already satisfied: packaging in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from bleach-&gt;nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (20.4)
+Requirement already satisfied: webencodings in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from bleach-&gt;nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (0.5.1)
+Requirement already satisfied: pyparsing&gt;=2.0.2 in /Users/patrick/Library/Python/3.7/lib/python/site-packages (from packaging-&gt;bleach-&gt;nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets-&gt;ndpretty) (2.4.6)
+Note: you may need to restart the kernel to use updated packages.
+</pre>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use"> </a></h2>
@@ -91,21 +163,6 @@ nb_path: "index.ipynb"
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div style="overflow: auto"><table><tr><th></th><th>0</th><th>1</th><th>2</th><th>3</th></tr><tr><td><b>0</b></td><td style="background-color: #6e6eff">0.0685</td><td style="background-color: #905cc0">0.33993</td><td style="background-color: #7e65e0">0.19991</td><td style="background-color: #a75196">0.52213</td></tr><tr><td><b>1</b></td><td style="background-color: #7769ed">0.14278</td><td style="background-color: #bb4772">0.67834</td><td style="background-color: #8e5dc4">0.32163</td><td style="background-color: #8f5dc1">0.33468</td></tr><tr><td><b>2</b></td><td style="background-color: #b54a7d">0.63085</td><td style="background-color: #d53a42">0.88666</td><td style="background-color: #cb3f54">0.80842</td><td style="background-color: #dc3737">0.93526</td></tr></table></div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -167,15 +224,6 @@ nb_path: "index.ipynb"
 <pre>10×5 float64 ndarray
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<div style="overflow: auto"><table><tr><th></th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><td><b>0</b></td><td style="background-color: #9d56a8">0.42592</td><td style="background-color: #ce3d4f">0.84211</td><td style="background-color: #9c56aa">0.41396</td><td style="background-color: #c34363">0.74758</td><td style="background-color: #9759b3">0.37527</td></tr><tr><td><b>1</b></td><td style="background-color: #cb3f55">0.8142</td><td style="background-color: #b7497a">0.64174</td><td style="background-color: #c24364">0.74288</td><td style="background-color: #da3739">0.94611</td><td style="background-color: #8d5ec6">0.28437</td></tr><tr><td><b>2</b></td><td style="background-color: #9a57ad">0.40014</td><td style="background-color: #b34b80">0.6139</td><td style="background-color: #ab4f8e">0.54594</td><td style="background-color: #8960cd">0.253</td><td style="background-color: #8761d1">0.23285</td></tr><tr><td><b>3</b></td><td style="background-color: #6f6dfb">0.032832</td><td style="background-color: #be456c">0.70744</td><td style="background-color: #8d5ec6">0.2851</td><td style="background-color: #c6415e">0.77141</td><td style="background-color: #ac4e8e">0.54845</td></tr><tr><td><b>4</b></td><td style="background-color: #c24365">0.73744</td><td style="background-color: #c8405a">0.79015</td><td style="background-color: #cf3d4d">0.85051</td><td style="background-color: #c24365">0.73791</td><td style="background-color: #a5529a">0.49018</td></tr><tr><td><b>5</b></td><td style="background-color: #8d5ec6">0.28515</td><td style="background-color: #915cbe">0.31936</td><td style="background-color: #8f5dc2">0.30216</td><td style="background-color: #8263da">0.19034</td><td style="background-color: #9c56aa">0.41642</td></tr><tr><td><b>6</b></td><td style="background-color: #8c5ec7">0.2805</td><td style="background-color: #da373a">0.94205</td><td style="background-color: #7d66e2">0.15212</td><td style="background-color: #dc3737">0.95743</td><td style="background-color: #ae4d89">0.5717</td></tr><tr><td><b>7</b></td><td style="background-color: #8661d3">0.22345</td><td style="background-color: #bf456a">0.71631</td><td style="background-color: #c04469">0.72249</td><td style="background-color: #b94875">0.66506</td><td style="background-color: #7c66e3">0.14654</td></tr><tr><td><b>8</b></td><td style="background-color: #8761d0">0.23784</td><td style="background-color: #c14466">0.73345</td><td style="background-color: #955ab6">0.35748</td><td style="background-color: #8661d1">0.23125</td><td style="background-color: #c8405a">0.7912</td></tr><tr><td><b>9</b></td><td style="background-color: #a95092">0.53008</td><td style="background-color: #d03c4c">0.85854</td><td style="background-color: #cd3e51">0.83361</td><td style="background-color: #d13c4a">0.86625</td><td style="background-color: #6e6eff">0.018584</td></tr></table></div>
-</div>
-
 </div>
 
 <div class="output_area">
