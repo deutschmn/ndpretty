@@ -19,7 +19,7 @@ highest_color = (220, 55, 55)
 number_format = '%.5g'
 
 # if an array dimension is bigger than this, automatically reduce by slicing to improve performance
-default_max_dim_size = 200
+default_max_dim_size = 100
 
 # Cell
 def ndarray_html(a):
@@ -132,5 +132,5 @@ def register_torch_tensor_formatter(print_formatter=tensor_stats_print_formatter
 # Cell
 def default():
     register_ndarray_formatter()
-    if 'torch' in modules:
+    if 'torch' in dir():
         register_torch_tensor_formatter()
