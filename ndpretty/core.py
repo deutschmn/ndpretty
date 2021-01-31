@@ -127,10 +127,11 @@ def tensor_stats_print_formatter(x, _, __):
     print('×'.join(map(str, x.shape)) + " " + str(x.dtype) + ' tensor')
 
 def register_torch_tensor_formatter(print_formatter=tensor_stats_print_formatter):
+    import torch
     register_formatter(torch.Tensor, torch_tensor_html, print_formatter)
 
 # Cell
 def default():
     register_ndarray_formatter()
-    if 'torch' in dir():
+    if 'torch' in modules:
         register_torch_tensor_formatter()
